@@ -9,6 +9,13 @@ const Navbar = () => {
             <Image src="/Logo.png" alt="logo" className='' width={54} height={30}/>
             <h1 className=' text-2xl font-sans'>ostGenie</h1>
         </Link>
+        <div className='flex gap-6 items-center justify-end'>
+            {/* pricing page */}
+            <Link href={'/pricing'} className=' from-stone-950 transition duration-200 dark:text-white'>
+               Pricing
+            </Link>
+            {/* Login button/User Avatar using clerk */}
+        </div>
     </div>
   )
 }
