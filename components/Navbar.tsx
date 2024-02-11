@@ -1,7 +1,8 @@
-import { UserButton, auth } from '@clerk/nextjs'
+import { SignInButton, UserButton, auth } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Button } from './ui/button'
 
 const Navbar = () => {
 
@@ -20,12 +21,12 @@ const Navbar = () => {
             </Link>
             {/* Login button/User Avatar using clerk */}
             { userId ? 
-              <UserButton /> 
+              <UserButton afterSignOutUrl='/' /> 
               :
              (
-              <Link href='/sign-in' className=' border p-2 px-4 rounded-xl'>
-                SignIn
-              </Link>
+                <Button variant={'default'}>
+                  <SignInButton afterSignInUrl='/'/>
+                </Button>
              )
             }
             
