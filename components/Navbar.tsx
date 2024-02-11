@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Button } from './ui/button'
+import { Bird } from 'lucide-react';
 
 const Navbar = () => {
 
@@ -16,20 +17,32 @@ const Navbar = () => {
         </Link>
         <div className='flex gap-6 items-center justify-end'>
             {/* pricing page */}
-            <Link href={'/pricing'} className=' from-stone-950 transition duration-200 dark:text-white'>
-               Pricing
-            </Link>
+
             {/* Login button/User Avatar using clerk */}
             { userId ? 
-              <UserButton afterSignOutUrl='/' /> 
+              (
+              <>
+              <Link href='/transform-tweet'>
+                <Button variant={'default'}>
+                  <Bird className='w-6 mr-2' />
+                  TweetAi
+                </Button>
+              </Link>
+              <UserButton afterSignOutUrl='/' />
+              </>
+              )
               :
              (
+              <>
+                <Link href={'/pricing'} className=' from-stone-950 transition duration-200 dark:text-white'>
+                  Pricing
+                </Link>
                 <Button variant={'default'}>
                   <SignInButton afterSignInUrl='/'/>
                 </Button>
+              </>
              )
             }
-            
         </div>
     </div>
   )
