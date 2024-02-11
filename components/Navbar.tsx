@@ -16,9 +16,6 @@ const Navbar = () => {
             <h1 className=' text-2xl font-sans'>ostGenie</h1>
         </Link>
         <div className='flex gap-6 items-center justify-end'>
-            {/* pricing page */}
-
-            {/* Login button/User Avatar using clerk */}
             { userId ? 
               (
               <>
