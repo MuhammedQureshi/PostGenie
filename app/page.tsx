@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className="">
-      <div className='relative isolate pt-[6rem] dark:bg-gray-900'>
+      <div className='relative isolate mt-[8rem] dark:bg-gray-900'>
         <div className='absolute inset-x-0 top-28 -z-10 transform-gpu overflow-hidden blur-3xl' aria-hidden="true">
           <div
             className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875]'

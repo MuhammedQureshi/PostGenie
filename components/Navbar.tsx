@@ -15,14 +15,13 @@ const Navbar = () => {
             <Image src="/Logo.png" alt="logo" className='' width={54} height={30}/>
             <h1 className=' text-2xl font-sans'>ostGenie</h1>
         </Link>
-        <div className='flex gap-6 items-center justify-end'>
+        <div className='flex gap-5 items-center justify-end'>
             { userId ? 
               (
               <>
               <Link href='/transform-tweet'>
                 <Button variant={'default'}>
-                  <Bird className='w-6 mr-2' />
-                  TweetAi
+                  <Bird className='mr-2 h-5 w-5' />TweetAi
                 </Button>
               </Link>
               <UserButton afterSignOutUrl='/' />
