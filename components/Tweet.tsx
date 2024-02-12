@@ -17,7 +17,7 @@ const Tweet = () => {
                 <CardContent>
 
                 </CardContent>
-            </Card> */}
+            </Card> */}  
         </div>
     </div>
   )
