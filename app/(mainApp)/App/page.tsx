@@ -1,7 +1,7 @@
 import Tweet from '@/components/Tweet'
-import React from 'react'
 
-const TransformTweet = () => {
+const App = () => {
+
   return (
     <div className='relative isolate mt-[12rem]'>
       <div className=''>
@@ -13,4 +13,4 @@ const TransformTweet = () => {
   )
 }
 
-export default TransformTweet
+export default App

@@ -19,7 +19,7 @@ const Navbar = () => {
             { userId ? 
               (
               <>
-              <Link href='/transform-tweet'>
+              <Link href='/App'>
                 <Button variant={'default'}>
                   <Bird className='mr-2 h-5 w-5' />TweetAi
                 </Button>
