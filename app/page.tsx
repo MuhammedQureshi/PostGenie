@@ -23,9 +23,9 @@ export default function Home() {
               Post Genie
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Make your tweets more interesting {""}
+              Turn your tweets from boring to brilliant {""}
               <span className="Otext-indigo-600 dark: text-indigo-500">
-              Let AI handle the transformation.
+              with AI-powered transformations. 
               </span>
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
