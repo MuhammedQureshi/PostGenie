@@ -19,10 +19,22 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { useState } from "react"
  
   
 
 const Tweet = () => {
+
+  const TweetStyles = [
+    {style: '😂 Funny'},
+    {style: '😐 Serious'},
+    {style: 'Gen Z'},
+    {style: 'Sarcastic'},
+    {style: 'Informative'},
+  ]
+
+  const [tweet, setTweet] = useState('');
+
   return (
     <div>
         <div className='flex items-center justify-center'>
@@ -42,6 +54,8 @@ const Tweet = () => {
                       <span className="text-gray-500">@handle</span>
                     </div>
                     <Textarea 
+                      value={tweet}
+                      onChange={(e) => setTweet(e.target.value)}
                       className=" text-base"
                       placeholder="Paste in the tweet you want to transform" 
                     />
@@ -56,15 +70,17 @@ const Tweet = () => {
                       <SelectContent>
                         <SelectGroup>
                           <SelectLabel>Styles</SelectLabel>
-                          <SelectItem value="apple">Apple</SelectItem>
-                          <SelectItem value="banana">Banana</SelectItem>
-                          <SelectItem value="blueberry">Blueberry</SelectItem>
-                          <SelectItem value="grapes">Grapes</SelectItem>
-                          <SelectItem value="pineapple">Pineapple</SelectItem>
+                          {TweetStyles.map((styles) => (
+                            <SelectItem key={styles.style} value={styles.style}>{styles.style}</SelectItem>
+                          ))}
                         </SelectGroup>
                       </SelectContent>
                     </Select>
-                    <Button className="text-sm p-5" variant={'default'}>Transform</Button>
+                    {tweet ?
+                    <Button onClick={() => console.log(tweet)} className="text-sm p-5" variant={'default'}>Transform</Button>
+                    :
+                    <Button className="text-sm p-5" variant={'default'} disabled>Transform</Button>
+                  }
                 </CardFooter>
             </Card> 
         </div>
