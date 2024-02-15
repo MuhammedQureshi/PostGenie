@@ -1,6 +1,6 @@
 # PostGenie - Your Ultimate Social Media Content Creation Tool
 
-PostGenie is a comprehensive social media content creation tool designed to streamline the process of creating engaging and impactful content for various social media platforms. With a wide range of features and intuitive interface, PostGenie empowers users to unleash their creativity and elevate their social media presence.
+PostGenie is a comprehensive social media content creation tool designed to streamline the process of creating engaging and impactful content for various social media platforms. With a wide range of features and intuitive interface, PostGenie empowers users to unleash their creativity and elevate their social media presence
 
 ## Features
 
