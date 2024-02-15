@@ -34,6 +34,7 @@ const Tweet = () => {
   ]
 
   const [tweet, setTweet] = useState('');
+  const [style, setStyle] = useState('');
 
   return (
     <div>
@@ -63,7 +64,7 @@ const Tweet = () => {
                 </div>
                 </CardContent>
                 <CardFooter className="flex gap-5 justify-center w-full">
-                    <Select>
+                    <Select onValueChange={(value) => setStyle(value)}>
                       <SelectTrigger className="w-[180px]">
                         <SelectValue placeholder="Select a style" />
                       </SelectTrigger>
@@ -77,7 +78,7 @@ const Tweet = () => {
                       </SelectContent>
                     </Select>
                     {tweet ?
-                    <Button onClick={() => console.log(tweet)} className="text-sm p-5" variant={'default'}>Transform</Button>
+                    <Button onClick={() => console.log(tweet, style)} className="text-sm p-5" variant={'default'}>Transform</Button>
                     :
                     <Button className="text-sm p-5" variant={'default'} disabled>Transform</Button>
                   }
