@@ -77,7 +77,7 @@ const Tweet = () => {
                         </SelectGroup>
                       </SelectContent>
                     </Select>
-                    {tweet ?
+                    {tweet && style ?
                     <Button onClick={() => console.log(tweet, style)} className="text-sm p-5" variant={'default'}>Transform</Button>
                     :
                     <Button className="text-sm p-5" variant={'default'} disabled>Transform</Button>
