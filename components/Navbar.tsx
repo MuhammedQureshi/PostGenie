@@ -5,8 +5,9 @@ import React from 'react'
 import { Button } from './ui/button'
 import { Bird } from 'lucide-react';
 
-const Navbar = () => {
 
+const Navbar = () => {
+  
   const {userId} = auth();
 
   return (
