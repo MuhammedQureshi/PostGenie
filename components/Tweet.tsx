@@ -20,6 +20,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { HeartIcon, RepeatIcon } from "lucide-react"
   
 const Tweet = () => {
 
@@ -59,6 +60,16 @@ const Tweet = () => {
                       placeholder="Paste in the tweet you want to transform" 
                     />
                   </div>
+                </div>
+                <div className="flex items-end justify-end gap-2">
+                  <Button className="h-6 px-2" variant="ghost">
+                    <HeartIcon className="w-4 h-4" />
+                    <span className="sr-only">Like</span>
+                  </Button>
+                  <Button className="h-6 px-2" variant="ghost">
+                    <RepeatIcon className="w-4 h-4" />
+                    <span className="sr-only">Retweet</span>
+                  </Button>
                 </div>
                 </CardContent>
                 <CardFooter className="flex gap-5 justify-center w-full">
