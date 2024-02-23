@@ -1,4 +1,5 @@
 import Tweet from '@/components/Tweet'
+import StyledTweets from '@/components/styledTweets';
 
 const App = () => {
 
@@ -8,6 +9,7 @@ const App = () => {
         {/* Tweet input comp */}
         <Tweet />
         {/* Generated tweets from the OpenAi api */}
+        <StyledTweets />
       </div>
     </div>
   )
