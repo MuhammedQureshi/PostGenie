@@ -7,7 +7,7 @@ const App = () => {
       <div className=''>
         {/* Tweet input comp */}
         <Tweet />
-        {/* Generated tweets comp */}
+        {/* Generated tweets from the OpenAi api */}
       </div>
     </div>
   )
