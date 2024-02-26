@@ -27,7 +27,7 @@ const Tweet = () => {
   const TweetStyles = [
     {style: '😂 Funny'},
     {style: '😐 Serious'},
-    {style: 'Gen Z'},
+    {style: '⚡️ Gen Z'},
     {style: 'Sarcastic'},
     {style: 'Informative'},
   ]

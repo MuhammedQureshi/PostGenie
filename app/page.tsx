@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
       <div className='relative isolate mt-[8rem] dark:bg-gray-900'>
         <div className='absolute inset-x-0 top-28 -z-10 transform-gpu overflow-hidden blur-3xl' aria-hidden="true">
           <div
